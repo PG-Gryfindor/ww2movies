@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WW II Movies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header>
+        <div class="logo">World War II Movies</div>
+        <nav>
+            <ul class="years_nav">
+                <li><a href="#">1939</a></li>
+                <li><a href="#">1940</a></li>
+                <li><a href="#">1941</a></li>
+                <li><a href="#">1942</a></li>
+                <li><a href="#">1943</a></li>
+                <li><a href="#">1944</a></li>
+                <li><a href="#">1945</a></li>
+            </ul>
+        </nav>
+        <div class="user_nav">
+            <a class="login" href="#">Login</a>
+            <a class="sound" href="#">sound</a>
+            <a class="theme" href="#">theme</a>
+        </div>
+
+    </header>
+    <div class="popup__container">
+        <form class="form" id="login">
+            <h1 class="form__title">Login</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Username or email">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <button class="form__button" type="submit">Continue</button>
+             <p class="form__text">
+                <a href="#" class="form__link">Forgot your password?</a>
+             </p>
+             <p class="form__text">
+                <a class="form__link" href="./" id="linkCreateAccount">Don't have account? Create account</a>
+             </p>
+        </form>
+        <form class="form form--hidden" id="createAccount">
+            <h1 class="form__title">Create Account</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Email Address">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Confirm password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <button class="form__button" type="submit">Continue</button>
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+             </p>
+        </form>
+    </div>
+    <script src="./js/login.js"></script>
+</body>
+</html>
