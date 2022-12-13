@@ -9,14 +9,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- maptiler -->
+        <script src="https://cdn.maptiler.com/maplibre-gl-js/v2.4.0/maplibre-gl.js"></script>
+        <link href="https://cdn.maptiler.com/maplibre-gl-js/v2.4.0/maplibre-gl.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/map.css">
 </head>
 <body>
+      
+
+    
     <header>
-        <div class="logo">World War II Movies</div>
+        <div class="logo">World War II Movies
+            <!-- <a href="index.html"></a> -->
+        </div>
         <nav>
             <ul class="years_nav">
                 <li><a href="#">1939</a></li>
@@ -30,17 +38,21 @@
         </nav>
         <div class="user_nav">
             <a class="login" href="#" onclick="openPopup()">Login</a>
-            <a class="sound" href="#">sound</a>
+            <span id="play-stop" class="material-symbols-outlined icon-hover" onclick="playStop()">music_note</span>
+            
             <a class="theme" href="#">theme</a>
         </div>
-
-    </header>
+     </header>
+     
     <!-- open layers -->
-    <!-- <div id="map"></div>
-    <script type="module" src="./js/map.js"></script> -->
-    <!-- Signup/Login -->
-    <div class="popup" id="popup">
-        <div class="container">
+    <div class="map__container">
+        <div id="map"></div>
+    </div>
+    <script src="./js/map.js"></script>
+
+        <!-- Signup/Login -->
+        <div class="popup" id="popup">
+            <div class="container">
             <form class="form" id="login">
                 <span class="form__close__button material-symbols-outlined" type="close" onclick="closePopup()">close</span>
                 <h1 class="form__title">Login</h1>
@@ -89,5 +101,9 @@
         </div>
     </div>
     <script src="./js/login.js"></script>
+
+    <!-- audio -->
+    <audio id="audio" autoplay><source src="./mp3/music2.mp3" type="audio/mpeg"></audio>
+    <script src="./js/audio.js"></script>  
 </body>
 </html>
