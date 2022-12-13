@@ -1,3 +1,5 @@
+
+// Signup/Login 
 function setFormMessage(formElement, type, message) {
     const messageElement = formElement.querySelector(".form__message")
 
@@ -52,3 +54,16 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+// Popup Signup/Login
+
+const popup = document.getElementById("popup");
+
+function openPopup() {
+    popup.classList.add("open-popup")
+}
+
+
+function closePopup() {
+    popup.classList.remove("open-popup")
+}
