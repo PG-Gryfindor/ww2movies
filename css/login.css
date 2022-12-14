@@ -1,7 +1,6 @@
-
-
-
+/* signup / login */
 .container {
+    display: flexbox;
     width: 350px;
     max-width: 350px;
     margin: 1rem;
@@ -14,8 +13,8 @@
 .popup {
 
     position: absolute;
-    top:0
-    left:50%;
+    top:0;
+    left:40%;
     transform: translate(0%, -50%) scale(0.1);
     visibility: hidden;
     transition: transform 0.4s, top 0.4s;
