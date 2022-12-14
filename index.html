@@ -22,8 +22,8 @@
 
     
     <header>
-        <div class="logo">World War II Movies
-            <!-- <a href="index.html"></a> -->
+        <div class="logo" href="#">World War II Movies
+           
         </div>
         <nav>
             <ul class="years_nav">
@@ -37,10 +37,19 @@
             </ul>
         </nav>
         <div class="user_nav">
-            <a class="login" href="#" onclick="openPopup()">Login</a>
-            <span id="play-stop" class="material-symbols-outlined icon-hover" onclick="playStop()">music_note</span>
+            <div class="dropdown">
+                <i id="menu"  class="material-symbols-outlined icon-hover">menu</i>
+                <ul>
+                    <li><a class="login" href="#" onclick="openPopup()">Login</a></li>
+                    <li><a>costamcostam</a></li>
+                    <li><a>costamcostam2></a></li>
+                </ul>
+            </div>
             
-            <a class="theme" href="#">theme</a>
+            <i id="play-stop" class="material-symbols-outlined icon-hover" onclick="playStop()">music_note</i>
+            <i id="lang" class="material-symbols-outlined icon-hover" >dark_mode</i>
+            <i id="mode" class="material-symbols-outlined icon-hover" >language</i>
+            
         </div>
      </header>
      
@@ -105,5 +114,26 @@
     <!-- audio -->
     <audio id="audio" autoplay><source src="./mp3/music2.mp3" type="audio/mpeg"></audio>
     <script src="./js/audio.js"></script>  
+    <footer class="footer">
+        <ul class="footer-col">
+            
+            <li><a href="#">some link</a></li>
+            <li><a href="#">some link</a></li>
+            <li><a href="#">some link</a></li>
+        </ul>
+        <ul class="footer-col">
+            
+            <li><a href="#">some link</a></li>
+            <li><a href="#">some link</a></li>
+            <li><a href="#">some link</a></li>
+        </ul>
+        <ul class="footer-col">
+            
+            <li><a href="#">some link</a></li>
+            <li><a href="#">some link</a></li>
+            <li><a href="#">some link</a></li>
+        </ul>
+                
+    </footer>
 </body>
 </html>
