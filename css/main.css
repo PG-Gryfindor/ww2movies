@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@500;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@500;600&display=swap'); */
 
 :root {
     
@@ -153,7 +153,6 @@ header {
 
 /******* signup / login *******/
 .container {
-    
     width: 350px;
     max-width: 350px;
     margin: 1rem;
@@ -164,7 +163,6 @@ header {
 }
     
 .popup {
-
     position: absolute;
     top:0;
     left:40%;
@@ -182,7 +180,7 @@ header {
 .container,
 .form__input,
 .form__button {
-    font: 500 1rem 'Qicksand', sans-serif;
+    font: 500 1rem 'Stick No Bills', sans-serif;
 }
 
 .form__close__button {
