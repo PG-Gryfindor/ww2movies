@@ -1,21 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@500;600&display=swap');
+
+:root {
+    
+    --color-black-font: #000000;
+    --color-primary: #223122;
+    --color-primary-dark: #007f67;
+    --color-link: #252c6a;
+    --color-error: #cc3333;
+    --color-success: #4bb544;
+    --border-radius: 2px;
+
+}
+
 * {
     box-sizing: border-box;
   }
 
 body {
 
-    --color-primary-font: #000000;
-    --color-primary: #009579;
-    --color-primary-dark: #007f67;
-    --color-secondary: #252c6a;
-    --color-error: #cc3333;
-    --color-success: #4bb544;
-    --border-radius: 2px;
-
-
     margin: 0;
-    max-height: 100%;
+    height: 100vh;
     max-width: 100%;
     display: grid;
     grid-template-rows: 1fr 10fr 2fr;
@@ -41,19 +45,12 @@ header {
     
 }
 
-/* inside header */
 .logo {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
-    cursor: pointer;
     margin-left: 1rem;
-    margin-bottom: 0;
-    
-}
-
-.years_nav ul {
-    margin: 0;
+        
 }
 
 .years_nav {
@@ -61,16 +58,14 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     align-content: center;
-    list-style: none;
-    margin-top: 0;
-    margin-bottom: 0;
+    list-style: none;    
 }
 
 
 
 .years_nav a {
     text-decoration: none;
-    color: var(--color-primary-font);
+    color: var(--color-black-font);
     margin-right: 1rem;
 }
 
@@ -156,11 +151,155 @@ header {
     'opsz' 48
 }
 
- /* map */
+/******* signup / login *******/
+.container {
+    
+    width: 350px;
+    max-width: 350px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    background-color: #ffffff95;
+}
+    
+.popup {
+
+    position: absolute;
+    top:0;
+    left:40%;
+    transform: translate(0%, -50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(0%, -50%) scale(1);
+}
+
+.container,
+.form__input,
+.form__button {
+    font: 500 1rem 'Qicksand', sans-serif;
+}
+
+.form__close__button {
+    display: flex;
+    position: absolute;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.form--hidden {
+    display: none;
+}
+
+.form > *:first-child {
+    margin-top: 0;
+}
+
+.form > *:last-child {
+    margin-bottom: 0;
+}
+
+.form__title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form__message {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form__message--success {
+    color: var(--color-success); 
+}
+
+.form__message--error {
+    color: var(--color-error);    
+}
+
+.form__input-group {
+    margin-bottom: 1rem;
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 1px solid #dddddd;
+    outline: none;
+    background: #eeeeee;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.form__input:focus {
+    border-color: var(--color-primary);
+    background: #ffffff;    
+}
+
+.form__input--error {
+    color: var(--color-error);
+    border-color: var(--color-error);
+}
+
+.form__input-error-message {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--color-error);
+}
+
+.form__button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff;
+    background: rgba(0,0,0,20);
+    outline: none;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 rgba(213 , 44, 21, 50);
+    -webkit-transition: ease-out 0.3s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.5s;
+}
+
+.form__button:hover {
+    box-shadow: inset 400px 0 0 0 rgba(213 , 44, 21, 20);
+} 
+
+.form__button:active {
+    transform: scale(0.98);
+}
+
+.form__text {
+    text-align: center;
+}
+
+.form__link {
+    color: var(--color-link);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form__link:hover {
+    text-decoration: underline;
+}
+
+ /******* map *******/
 .map__container {
     display: grid;
-    grid-template-columns: max-content;
-    height: 1fr;
     position: relative;
     border-style: solid;
     border-width: 3px 0;
@@ -183,25 +322,20 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #ffffff50;
-    
     position: relative;
 }
 
 .footer ul {
     display:grid;
     align-content: center;    
-}
-
-.footer li {
-    display:grid;
     justify-content: center;
+    list-style: none;
 }
 
 .footer ul li a {
-    list-style: none;
-    justify-content: center;
-    justify-items: center;
     text-decoration: none;
+    list-style: none;
+    justify-items: center;
     color: #000
 }
 
