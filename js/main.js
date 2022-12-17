@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     loginForm.addEventListener("submit", e => {
         e.preventDefault();
 
-     //  AJAX/Fetch login
+        //  AJAX/Fetch login
 
         setFormMessage(loginForm, "error", "Invalid username/password combination");
     });
@@ -68,11 +68,46 @@ function closePopup() {
 // ******* Map ******* 
 const key = 'KBNcLm3O2HsmQwAGcJSS ';
 const map = new maplibregl.Map({
-  container: 'map', // container's id or the HTML element in which MapLibre GL JS will render the map
-  style: `https://api.maptiler.com/maps/70623a5f-370e-4bc5-8281-3492c6297486/style.json?key=KBNcLm3O2HsmQwAGcJSS`, // style URL
-  center: [0.0, 45.2125578], // starting position [lng, lat]
-  zoom: 1.95, // starting zoom
+    container: 'map', // container's id or the HTML element in which MapLibre GL JS will render the map
+    style: `https://api.maptiler.com/maps/70623a5f-370e-4bc5-8281-3492c6297486/style.json?key=KBNcLm3O2HsmQwAGcJSS`, // style URL
+    center: [0.0, 45.2125578], // starting position [lng, lat]
+    zoom: 1.95, // starting zoom
 });
+
+
+
+map.on('load', function () {
+    // Add an image to use as a custom marker
+    map.loadImage(
+        'pin.png',
+        function (error, image) {
+            if (error) throw error;
+            map.addImage('custom-marker', image);
+            map.addSource('movies', {
+                'type': 'geojson',
+                'data': './movies.json'
+            });
+
+            // Add a symbol layer
+            map.addLayer({
+                'id': 'movies',
+                'type': 'symbol',
+                'source': 'movies',
+                'layout': {
+                    'icon-image': 'custom-marker',
+                    'icon-size': 0.06,
+                }
+            });
+        });
+});
+
+map.on('click', 'movies', function (e) {
+    new maplibregl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(`<h3>Title</h3>${e.features[0].properties.title}<h3>Year of production</h3>${e.features[0].properties.yearProduction}<h3>Year of action</h3>${e.features[0].properties.yearAction}<h3>Cast</h3>${e.features[0].properties.cast}<h3>Description</h3>${e.features[0].properties.description}<h3>Links</h3><a href = "${e.features[0].properties.imdb}">IMDB</a> <a href = "${e.features[0].properties.filmweb}">filmweb</a>`)
+        .addTo(map);
+});
+
 map.addControl(new maplibregl.NavigationControl(), 'top-right');
 
 // ******* Audio mp3 *******
@@ -82,12 +117,12 @@ const playStopSpan = document.getElementById("play-stop");
 let count = 0;
 
 function playStop() {
-    if  (count == 0) {
+    if (count == 0) {
         count = 1;
         audio.pause();
         playStopSpan.innerHTML = "music_off";
 
-    }else{
+    } else {
         count = 0;
         audio.play();
         playStopSpan.innerHTML = "music_note";

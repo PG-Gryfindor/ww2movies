@@ -1,0 +1,405 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -349.07032664,
+                    47.51691279
+                ]
+            },
+            "id": "886766c2-ce8e-430f-848d-685d61a479fe",
+            "properties": {
+                "cast": "Richard Burton, Clint Eastwood, Mary Ure",
+                "imdb": "https://www.imdb.com/title/tt0065207/?ref_=nv_sr_srsg_0",
+                "title": "Where Eagles Dare",
+                "filmweb": "https://www.filmweb.pl/film/Tylko+dla+or\u0142\u00f3w-1968-11289",
+                "yearAction": "1943",
+                "description": "Allied agents stage a daring raid on a castle where the Nazis are holding American brigadier general George Carnaby prisoner, but that's not all that's really going on.",
+                "yearProduction": "1968"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.22043018,
+                    46.92911013
+                ]
+            },
+            "id": "73c44b3b-2d1c-482f-b5a0-cecf67a68bc9",
+            "properties": {
+                "cast": "Lee Marvin, Mark Hamill, Robert Carradine",
+                "imdb": "https://www.imdb.com/title/tt0080437/?ref_=nv_sr_srsg_0",
+                "title": "The big red one",
+                "filmweb": "https://www.filmweb.pl/film/Wielka+czerwona+jedynka-1980-32620",
+                "yearAction": "1942",
+                "description": "A hardened sergeant and the four core members of his infantry unit try to survive World War II as they move from battle to battle throughout Europe.",
+                "yearProduction": "1980"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.67312385,
+                    48.11538783
+                ]
+            },
+            "id": "9c7d235e-17b9-4a09-822b-b9ca3fb1c846",
+            "properties": {
+                "cast": " Lee Marvin, Ernest Borgnine, Charles Bronson",
+                "imdb": "https://www.imdb.com/title/tt0061578/?ref_=nv_sr_srsg_0",
+                "title": "The Dirty Dozen",
+                "filmweb": "https://www.filmweb.pl/film/Parszywa+dwunastka-1967-8547",
+                "yearAction": "1944",
+                "description": "During World War II, a rebellious U.S. Army Major is assigned a dozen convicted murderers to train and lead them into a mass assassination mission of German officers.",
+                "yearProduction": "1967"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    19.20415412,
+                    50.02637082
+                ]
+            },
+            "id": "983ffa71-72a2-4e16-a832-46dabc8f4e00",
+            "properties": {
+                "cast": "Michel Bouquet, Reinhard Heydrich, Heinrich Himmler, ",
+                "imdb": "https://www.imdb.com/title/tt0048434/?ref_=nv_sr_srsg_0",
+                "title": "Night and Fog",
+                "filmweb": "https://www.filmweb.pl/film/Noc+i+mg\u0142a-1955-125644",
+                "yearAction": "1945",
+                "description": "The history of Nazi Germany's death camps of the Final Solution and the hellish world of dehumanization and death contained inside.",
+                "yearProduction": "1956"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -199.85306659,
+                    -9.61858644
+                ]
+            },
+            "id": "d128f525-1a69-4510-9103-96960d21089d",
+            "properties": {
+                "cast": " Jim Caviezel, Sean Penn, Nick Nolte",
+                "imdb": "https://www.imdb.com/title/tt0120863/",
+                "title": "Thin red line",
+                "filmweb": "https://www.filmweb.pl/film/Cienka+czerwona+linia-1998-28",
+                "yearAction": "1942",
+                "description": "Adaptation of James Jones' autobiographical 1962 novel, focusing on the conflict at Guadalcanal during the second World War.",
+                "yearProduction": "1998"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.66922217,
+                    38.12201121
+                ]
+            },
+            "id": "e0935678-3b43-48ad-8e16-59177573573b",
+            "properties": {
+                "cast": "J\u00fcrgen Prochnow, Herbert Gr\u00f6nemeyer, Klaus Wennemann",
+                "imdb": "https://www.imdb.com/title/tt0082096/?ref_=nv_sr_srsg_0",
+                "title": "Das Boot",
+                "filmweb": "https://www.filmweb.pl/film/Okr\u0119t-1981-1289",
+                "yearAction": "1941",
+                "description": "A German U-boat stalks the frigid waters of the North Atlantic as its young crew experience the sheer terror and claustrophobic life of a submariner in World War II.",
+                "yearProduction": "1981"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.36634592,
+                    51.04085231
+                ]
+            },
+            "id": "c3febc5b-b67d-468c-8766-3e2259d97edc",
+            "properties": {
+                "cast": " Fionn Whitehead, Barry Keoghan, Mark Rylance",
+                "imdb": "https://www.imdb.com/title/tt5013056/?ref_=nv_sr_srsg_0",
+                "title": "Dunkirk",
+                "filmweb": "https://www.filmweb.pl/film/Dunkierka-2017-681141",
+                "yearAction": "1940",
+                "description": "Allied soldiers from Belgium, the British Commonwealth and Empire, and France are surrounded by the German Army and evacuated during a fierce battle in World War II.",
+                "yearProduction": "2017"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    36.77355703,
+                    45.19181072
+                ]
+            },
+            "id": "b165c011-d5e1-4a7b-a2cd-ad29b884e0d0",
+            "properties": {
+                "cast": "James Coburn, Maximilian Schell, James Mason",
+                "imdb": "https://www.imdb.com/title/tt0074695/?ref_=nv_sr_srsg_0",
+                "title": "Cross of Iron",
+                "filmweb": "https://www.filmweb.pl/film/\u017belazny+krzy\u017c-1977-37394",
+                "yearAction": "1943",
+                "description": "German commander Hauptmann Stransky (Maximilian Schell) places a squad in extreme danger after Sergeant Rolf Steiner (James Coburn) refuses to lie for him.",
+                "yearProduction": "1977"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    21.10386375,
+                    52.20810378
+                ]
+            },
+            "id": "f097c36e-4a19-4e3c-9541-4c7dd21982d5",
+            "properties": {
+                "cast": "Teresa Izewska, Tadeusz Janczar, Wienczyslaw Glinski",
+                "imdb": "https://www.imdb.com/title/tt0050585/?ref_=nv_sr_srsg_0",
+                "title": "Kanal",
+                "filmweb": "https://www.filmweb.pl/film/Kana\u0142-1956-1117",
+                "yearAction": "1944",
+                "description": "In 1944, during the Warsaw uprising against the Nazis, Polish Lieutenant Zadra and his resistance fighters use Warsaw's sewer system to escape the German encirclement.",
+                "yearProduction": "1956"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.51446563,
+                    50.44601891
+                ]
+            },
+            "id": "7a26322c-1093-4a83-b5ca-451404f1b59d",
+            "properties": {
+                "cast": "David Niven, Kim Hunter, Robert Coote",
+                "imdb": "https://www.imdb.com/title/tt0038733/?ref_=nv_sr_srsg_0",
+                "title": "A Matter of Life and Death",
+                "filmweb": "https://www.filmweb.pl/film/Sprawa+\u017cycia+i+\u015bmierci-1946-3604",
+                "yearAction": "1945",
+                "description": "A British wartime aviator who cheats death must argue for his life before a celestial court, hoping to prolong his fledgling romance with an American girl.",
+                "yearProduction": "1946"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    27.2498,
+                    53.1062
+                ]
+            },
+            "id": "bc363f18-e9fd-42a2-9216-2b988fe21022",
+            "properties": {
+                "cast": "Aleksei Kravchenko, Olga Mironova",
+                "imdb": "https://www.imdb.com/title/tt0091251/",
+                "title": "Come and see",
+                "filmweb": "https://www.filmweb.pl/film/Id\u017a+i+patrz-1985-35185",
+                "yearAction": "1943",
+                "description": "After finding an old rifle, a young boy joins the Soviet resistance movement against ruthless German forces and experiences the horrors of World War II.",
+                "yearProduction": "1985"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.89281048,
+                    51.6136695
+                ]
+            },
+            "id": "e9c3efc1-fdbe-495c-9838-8fc9c2193a52",
+            "properties": {
+                "cast": "Leslie Banks, C.V. France, Valerie Taylor",
+                "imdb": "https://www.imdb.com/title/tt0035429/?ref_=nv_sr_srsg_0",
+                "title": "Went the Day Well?",
+                "filmweb": "https://www.filmweb.pl/film/Dzie\u0144+dobrze+min\u0105\u0142-1942-147374",
+                "yearAction": "1942",
+                "description": "An English village is occupied by disguised German paratroopers as an advance post for a planned invasion.",
+                "yearProduction": "1942"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    37.6208792,
+                    55.74459359
+                ]
+            },
+            "id": "eb143cd8-d63e-40ea-a307-eafd3267b5df",
+            "properties": {
+                "cast": "Tatyana Samoylova, Aleksey Batalov, Vasiliy Merkurev",
+                "imdb": "https://www.imdb.com/title/tt0050634/?ref_=nv_sr_srsg_0",
+                "title": "The cranes are flying",
+                "filmweb": "https://www.filmweb.pl/film/Lec\u0105+\u017curawie-1957-103888",
+                "yearAction": "1941",
+                "description": "Veronica plans a rendezvous with her lover, Boris, at the bank of river, only for him to be drafted into World War II shortly thereafter.",
+                "yearProduction": "1957"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    19.93157294,
+                    50.05618278
+                ]
+            },
+            "id": "00fcb910-aa6c-41ad-99ef-1ab247859b98",
+            "properties": {
+                "cast": "Liam Neeson, Ralph Fiennes, Ben Kingsley",
+                "imdb": "https://www.imdb.com/title/tt0108052/",
+                "title": "Schindler's List",
+                "filmweb": "https://www.filmweb.pl/film/Lista+Schindlera-1993-1211",
+                "yearAction": "1945",
+                "description": "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
+                "yearProduction": "1993"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    19.22090929,
+                    50.03776371
+                ]
+            },
+            "id": "48b6d600-3013-44ad-8287-b0e8e4f62c03",
+            "properties": {
+                "cast": "Simon Srebnik, Michael Podchlebnik, Motke Za\u00efdl",
+                "imdb": "https://www.imdb.com/title/tt0090015/?ref_=nv_sr_srsg_0",
+                "title": "Shoah",
+                "filmweb": "https://www.filmweb.pl/film/Shoah-1985-89037",
+                "yearAction": "1939",
+                "description": "Claude Lanzmann's epic documentary recounts the story of the Holocaust through interviews with witnesses - perpetrators as well as survivors.",
+                "yearProduction": "1985"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.48464409,
+                    41.89442037
+                ]
+            },
+            "id": "1aee7872-47f9-4abf-b18b-de70707801a7",
+            "properties": {
+                "cast": "Anna Magnani, Aldo Fabrizi, Marcello Pagliero",
+                "imdb": "https://www.imdb.com/title/tt0038890/?ref_=nv_sr_srsg_0",
+                "title": "Rome, open city",
+                "filmweb": "https://www.filmweb.pl/film/Rzym%2C+miasto+otwarte-1945-32547",
+                "yearAction": "1944",
+                "description": "During the Nazi occupation of Rome in 1944, the Resistance leader, Giorgio Manfredi, is chased by the Nazis as he seeks refuge and a way to escape.",
+                "yearProduction": "1945"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -157.98977103,
+                    21.43289777
+                ]
+            },
+            "id": "3f5e1b40-0d37-4be3-83cf-97e2bb371201",
+            "properties": {
+                "cast": "Burt Lancaster, Montgomery Clift, Deborah Kerr",
+                "imdb": "https://www.imdb.com/title/tt0045793/?ref_=nv_sr_srsg_0",
+                "title": "From Here to Eternity",
+                "filmweb": "https://www.filmweb.pl/film/St\u0105d+do+wieczno\u015bci-1953-31023",
+                "yearAction": "1941",
+                "description": "At a U.S. Army base in 1941 Hawaii, a private is cruelly punished for not boxing on his unit's team, while his commanding officer's wife and top aide begin a tentative affair.",
+                "yearProduction": "1953"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -346.60165674,
+                    52.51642513
+                ]
+            },
+            "id": "6c7adf16-89fc-4097-995d-7dc2f6266115",
+            "properties": {
+                "cast": "Nikolay Burlyaev, Valentin Zubkov, Evgeniy Zharikov",
+                "imdb": "https://www.imdb.com/title/tt0056111/?ref_=nv_sr_srsg_0",
+                "title": "Ivan's childhood",
+                "filmweb": "https://www.filmweb.pl/film/Dziecko+wojny-1962-103880",
+                "yearAction": "1942",
+                "description": "During WWII, Soviet orphan Ivan Bondarev strikes up a friendship with three sympathetic Soviet officers while working as a scout behind the German lines.",
+                "yearProduction": "1962"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.18664955,
+                    34.69862022
+                ]
+            },
+            "id": "17f2244c-72b9-4497-a38c-b50ee807696f",
+            "properties": {
+                "cast": " Tsutomu Tatsumi, Ayano Shiraishi, Akemi Yamaguchi",
+                "imdb": "https://www.imdb.com/title/tt0095327/?ref_=nv_sr_srsg_0",
+                "title": "Grave of Fireflies",
+                "filmweb": "https://www.filmweb.pl/film/Grobowiec+\u015bwietlik\u00f3w-1988-34655",
+                "yearAction": "1945",
+                "description": "A young boy and his little sister struggle to survive in Japan during World War II.",
+                "yearProduction": "1988"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.12031878,
+                    51.50923136
+                ]
+            },
+            "id": "22deae56-c74b-4881-9326-39924716565c",
+            "properties": {
+                "cast": "Philip Dickson, George Gravett, Fred Griffiths(uncredited)",
+                "imdb": "https://www.imdb.com/title/tt0035881/?ref_=nv_sr_srsg_0",
+                "title": "Fires Were Started",
+                "filmweb": "https://www.filmweb.pl/film/Wybuch\u0142y+po\u017cary-1943-269418",
+                "yearAction": "1941",
+                "description": "A tale of firefighters in London during the Blitz.",
+                "yearProduction": "1943"
+            }
+        }
+    ]
+}
