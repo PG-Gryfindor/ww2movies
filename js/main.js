@@ -86,8 +86,7 @@ map.on('load', function () {
             map.addSource('movies', {
                 'type': 'geojson',
                 'data': './movies.json'
-            });
-
+            }); 
             // Add a symbol layer
             map.addLayer({
                 'id': 'movies',
@@ -96,6 +95,7 @@ map.on('load', function () {
                 'layout': {
                     'icon-image': 'custom-marker',
                     'icon-size': 0.06,
+                    'icon-overlap': 'always'
                 }
             });
         });

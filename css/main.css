@@ -316,6 +316,16 @@ h3 {
     opacity: 0.85;
 }
 
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip, .maplibregl-popup-anchor-top .maplibregl-popup-tip {
+    align-self: center;
+    border-bottom-color: #a09c9c;
+    border-top: none;
+}
+
+.maplibregl-popup-content, .mapboxgl-popup-content{
+    background-color: #a09c9c;
+}
+
 .footer {
     font-family: 'Stick No Bills', sans-serif;
     font-weight: 500;
