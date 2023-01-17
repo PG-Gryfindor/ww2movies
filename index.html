@@ -33,14 +33,26 @@
             <div class="dropdown">
                 <i tabindex="0" id="menu"  class="material-symbols-outlined icon-hover">menu</i> <!-- tabindex to allow :focus on it in css -->
                 <ul>
-                    <li><a class="login" onclick="openPopup()"># login / signup #</a></li>
-                    <li><a># costamcostam #</a></li>
-                    <li><a># contact #</a></li>
+                    <li><a class="login" onclick="openPopup()">Login / Signup</a></li>
+                    <li><a>costamcostam</a></li>
+                    <li><a>contact</a></li>
                 </ul>
             </div>
             <i id="play-stop" class="material-symbols-outlined icon-hover" onclick="playStop()">music_note</i>
-            <i id="mode" class="material-symbols-outlined icon-hover  theme-toggle-button" >dark_mode</i>
-            <i id="lang" class="material-symbols-outlined icon-hover" >language</i>
+            <i id="mode" class="material-symbols-outlined icon-hover  theme-toggle-button" onclick="toggleTheme()" >dark_mode</i>
+ 
+            <!-- Languages -->           
+            <div class="dropdown language">
+                <i tabindex="0" id="lang" class="material-symbols-outlined icon-hover">Language</i>
+                <ul>
+                    <li>
+                        <a language="english" class="active">EN</a>
+                    </li>
+                    <li>
+                        <a language="polish">PL</a>
+                    </li>
+                </ul>
+            </div>
         </div>
      </header>
      
