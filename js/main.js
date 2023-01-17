@@ -75,6 +75,42 @@ const map = new maplibregl.Map({
 });
 map.addControl(new maplibregl.NavigationControl(), 'top-right');
 
+// ******* Maps Markers *******
+
+map.on('load', function () {
+    // Add an image to use as a custom marker
+    map.loadImage(
+        './img/pin.png',
+        function (error, image) {
+            if (error) throw error;
+            map.addImage('custom-marker', image);
+            map.addSource('movies', {
+                'type': 'geojson',
+                'data': './movies.json'
+            }); 
+            // Add a symbol layer
+            map.addLayer({
+                'id': 'movies',
+                'type': 'symbol',
+                'source': 'movies',
+                'layout': {
+                    'icon-image': 'custom-marker',
+                    'icon-size': 0.06,
+                    'icon-overlap': 'always'
+                }
+            });
+        });
+});
+
+map.on('click', 'movies', function (e) {
+    new maplibregl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(`<h3>Title</h3>${e.features[0].properties.title}<h3>Year of production</h3>${e.features[0].properties.yearProduction}<h3>Year of action</h3>${e.features[0].properties.yearAction}<h3>Cast</h3>${e.features[0].properties.cast}<h3>Description</h3>${e.features[0].properties.description}<h3>Links</h3><a href = "${e.features[0].properties.imdb}">IMDB</a> <a href = "${e.features[0].properties.filmweb}">filmweb</a>`)
+        .addTo(map);
+});
+
+map.addControl(new maplibregl.NavigationControl(), 'top-right');
+
 // ******* Audio mp3 *******
 const audio = document.getElementById("audio");
 const playStopSpan = document.getElementById("play-stop");
@@ -93,3 +129,8 @@ function playStop() {
         playStopSpan.innerHTML = "music_note";
     }
 };
+
+// ******* Dark/Light Theme *******
+document.querySelector('.theme-toggle-button').addEventListener('click', () => {
+    document.body.classList.toggle('dark')
+})

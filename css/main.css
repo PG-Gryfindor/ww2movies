@@ -2,6 +2,17 @@
 
 :root {
     
+    
+
+}
+
+* { 
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+  }
+
+body {
     --color-black-font: #000000;
     --color-primary: #223122;
     --color-primary-dark: #007f67;
@@ -9,16 +20,26 @@
     --color-error: #cc3333;
     --color-success: #4bb544;
     --border-radius: 2px;
-
+    
+    height: 100vh;
+    max-width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 10fr 2fr;
+    font-size: 18px;
+    background: url(../img/bg-1939.jpg) ;
+    background-size: cover;
 }
+/* dark theme */
+body.dark {
 
-* {
-    box-sizing: border-box;
-  }
+    --color-black-font: #4200f7;
+    --color-primary: #223122;
+    --color-primary-dark: #007f67;
+    --color-link: #252c6a;
+    --color-error: #cc3333;
+    --color-success: #4bb544;
+    --border-radius: 2px;
 
-body {
-
-    margin: 0;
     height: 100vh;
     max-width: 100%;
     display: grid;
