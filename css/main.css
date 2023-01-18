@@ -61,7 +61,7 @@ header {
     font-weight: 500;
     font-size: 2rem;
     width: 100%;
-    max-height: 80px;
+    /* max-height: 80px; */
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     align-content: center;
@@ -404,7 +404,6 @@ footer ul li a {
         font-weight: 500;
         font-size: 2rem;
         width: 100%;
-        max-height: 80px;
         display: flex;
         align-content:space-between;
         justify-content:space-between;
