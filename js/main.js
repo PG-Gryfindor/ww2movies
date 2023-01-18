@@ -1,3 +1,4 @@
+"use strict"
 
 // ******* Signup/Login Popup ******* 
 function setFormMessage(formElement, type, message) {
@@ -75,30 +76,6 @@ const map = new maplibregl.Map({
 });
 map.addControl(new maplibregl.NavigationControl(), 'top-right');
 
-// -------------------- Map on screens max-width: 940px --------------
-//const matchResult = window.matchMedia("(max-width: 940px)");
-
-//     if (window.matchMedia("(max-width: 940px)").matches) {
-//         const key = 'KBNcLm3O2HsmQwAGcJSS ';
-//         const map = new maplibregl.Map({
-//         container: 'map', // container's id or the HTML element in which MapLibre GL JS will render the map
-//         style: `https://api.maptiler.com/maps/70623a5f-370e-4bc5-8281-3492c6297486/style.json?key=KBNcLm3O2HsmQwAGcJSS`, // style URL
-//         center: [0.0, 45.2125578], // starting position [lng, lat]
-//         zoom: 1, // starting zoom
-//         });
-//     } else {
-//         const key = 'KBNcLm3O2HsmQwAGcJSS ';
-//         const map = new maplibregl.Map({
-//         container: 'map', // container's id or the HTML element in which MapLibre GL JS will render the map
-//         style: `https://api.maptiler.com/maps/70623a5f-370e-4bc5-8281-3492c6297486/style.json?key=KBNcLm3O2HsmQwAGcJSS`, // style URL
-//         center: [0.0, 45.2125578], // starting position [lng, lat]
-//         zoom: 1.95, // starting zoom
-//         }); 
-//         map.addControl(new maplibregl.NavigationControl(), 'top-right'); 
-    
-// }
-
-
 // ******* Maps Markers *******
 
 map.on('load', function () {
@@ -110,7 +87,7 @@ map.on('load', function () {
             map.addImage('custom-marker', image);
             map.addSource('movies', {
                 'type': 'geojson',
-                'data': './movies.json'
+                'data': './json/movies.json'
             }); 
             // Add a symbol layer
             map.addLayer({
@@ -134,7 +111,7 @@ map.on('click', 'movies', function (e) {
                 <h3>Year of action</h3>${e.features[0].properties.yearAction}
                 <h3>Cast</h3>${e.features[0].properties.cast}
                 <h3>Description</h3>${e.features[0].properties.description}
-                <h3>Links</h3>
+                <h3>Links\n</h3>
                     <a href = "${e.features[0].properties.imdb}">IMDB</a> 
                     <a href = "${e.features[0].properties.filmweb}">filmweb</a>`)
         .addTo(map);
@@ -176,34 +153,4 @@ function toggleTheme() {
     }
 } 
 
-// ******* Multilingual *******
 
-
-let language = document.querySelector(".language"),
-     link = document.querySelectorAll("a"),
-     logo = document.querySelector(".logo"),
-     login = document.querySelector(".login");
-
-link.forEach(el=>{
-     el.addEventListener("click", ()=>{
-          language.querySelector(".active").classList.remove("active");
-          el.classList.add("active");
-
-          let attr = el.getAttribute("language")
-
-          logo.textContent = languageData[attr].logo
-          login.textContent = languageData[attr].login
-     })
-})
-// -------- Language DATA -----------
-let languageData = {
-     polish: {
-          logo: "II Wojna Światowa w filmach",
-          login: "Logowanie / Rejestracja",
-        },
-        english: {
-            logo: "World War II Movies",
-            login: "Login / Signup",
-     }
-}
-//---------------------------------------END Language DATA

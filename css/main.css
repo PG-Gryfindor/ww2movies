@@ -14,7 +14,7 @@
 
 body {
     --color-dropdown-bg: #a09898;
-    --color-bg: #ffffff50;
+    --color-bg: #ffffff85;
     --color-font: #000000;
     --color-primary: #223122;
     --color-primary-dark: #007f67;
@@ -29,15 +29,15 @@ body {
     display: grid;
     grid-template-rows: 1fr 10fr 2fr;
     font-size: 18px;
-    background: url(../img/bg-1939.jpg) ;
+    /* background: url(../img/bg-1939.jpg) ; */
     background-size: cover;
     color: var(--color-font);
 }
 /* dark theme */
 body.dark {
     
-    --color-dropdown-bg: #a09898;
-    --color-bg: #0a0a0a69;
+    --color-dropdown-bg: #000000cc;
+    --color-bg: #000000cc;
     --color-font: #ffffff;
     --color-primary: #223122;
     --color-primary-dark: #007f67;
@@ -47,14 +47,12 @@ body.dark {
     --border-color: #ffffff;
     --border-radius: 2px;
 
-    /* height: 100vh;
-    max-width: 100%;
-    display: grid;
-    grid-template-rows: 1fr 10fr 2fr;
-    font-size: 18px;
-    background: url(../img/bg-1939.jpg) ;
-    background-size: cover; */
 }
+
+.changeBG {
+    background: url(../img/bg-1939.jpg); 
+}
+
 
 header {
     font-family: 'Stick No Bills', sans-serif;
@@ -391,6 +389,17 @@ footer ul li a {
     /* border-style: solid;
     border-width: 1px 0 0 0; */
     /* border-color: var(--border-color); */
+}
+
+
+/******** MapLibre POPUP ***********/
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip, .maplibregl-popup-anchor-top .maplibregl-popup-tip {
+    display:none;
+}
+
+
+.mapboxgl-popup-content, .maplibregl-popup-content {
+    background-color: var(--color-dropdown-bg) ;
 }
 
 @media only screen and (max-width: 1024px) {
