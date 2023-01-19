@@ -1,0 +1,86 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.22043018,
+                    46.92911013
+                ]
+            },
+            "id": "73c44b3b-2d1c-482f-b5a0-cecf67a68bc9",
+            "properties": {
+                "cast": "Lee Marvin, Mark Hamill, Robert Carradine",
+                "imdb": "https://www.imdb.com/title/tt0080437/?ref_=nv_sr_srsg_0",
+                "title": "The big red one",
+                "filmweb": "https://www.filmweb.pl/film/Wielka+czerwona+jedynka-1980-32620",
+                "yearAction": "1942",
+                "description": "A hardened sergeant and the four core members of his infantry unit try to survive World War II as they move from battle to battle throughout Europe.",
+                "yearProduction": "1980"
+            }
+        },
+{
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -199.85306659,
+                    -9.61858644
+                ]
+            },
+            "id": "d128f525-1a69-4510-9103-96960d21089d",
+            "properties": {
+                "cast": " Jim Caviezel, Sean Penn, Nick Nolte",
+                "imdb": "https://www.imdb.com/title/tt0120863/",
+                "title": "Thin red line",
+                "filmweb": "https://www.filmweb.pl/film/Cienka+czerwona+linia-1998-28",
+                "yearAction": "1942",
+                "description": "Adaptation of James Jones' autobiographical 1962 novel, focusing on the conflict at Guadalcanal during the second World War.",
+                "yearProduction": "1998"
+            }
+        },
+{
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.89281048,
+                    51.6136695
+                ]
+            },
+            "id": "e9c3efc1-fdbe-495c-9838-8fc9c2193a52",
+            "properties": {
+                "cast": "Leslie Banks, C.V. France, Valerie Taylor",
+                "imdb": "https://www.imdb.com/title/tt0035429/?ref_=nv_sr_srsg_0",
+                "title": "Went the Day Well?",
+                "filmweb": "https://www.filmweb.pl/film/Dzie\u0144+dobrze+min\u0105\u0142-1942-147374",
+                "yearAction": "1942",
+                "description": "An English village is occupied by disguised German paratroopers as an advance post for a planned invasion.",
+                "yearProduction": "1942"
+            }
+        },
+{
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -346.60165674,
+                    52.51642513
+                ]
+            },
+            "id": "6c7adf16-89fc-4097-995d-7dc2f6266115",
+            "properties": {
+                "cast": "Nikolay Burlyaev, Valentin Zubkov, Evgeniy Zharikov",
+                "imdb": "https://www.imdb.com/title/tt0056111/?ref_=nv_sr_srsg_0",
+                "title": "Ivan's childhood",
+                "filmweb": "https://www.filmweb.pl/film/Dziecko+wojny-1962-103880",
+                "yearAction": "1942",
+                "description": "During WWII, Soviet orphan Ivan Bondarev strikes up a friendship with three sympathetic Soviet officers while working as a scout behind the German lines.",
+                "yearProduction": "1962"
+            }
+        }
+]
+}

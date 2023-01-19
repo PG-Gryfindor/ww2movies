@@ -1,0 +1,86 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.66922217,
+                    38.12201121
+                ]
+            },
+            "id": "e0935678-3b43-48ad-8e16-59177573573b",
+            "properties": {
+                "cast": "J\u00fcrgen Prochnow, Herbert Gr\u00f6nemeyer, Klaus Wennemann",
+                "imdb": "https://www.imdb.com/title/tt0082096/?ref_=nv_sr_srsg_0",
+                "title": "Das Boot",
+                "filmweb": "https://www.filmweb.pl/film/Okr\u0119t-1981-1289",
+                "yearAction": "1941",
+                "description": "A German U-boat stalks the frigid waters of the North Atlantic as its young crew experience the sheer terror and claustrophobic life of a submariner in World War II.",
+                "yearProduction": "1981"
+            }
+        },
+{
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    37.6208792,
+                    55.74459359
+                ]
+            },
+            "id": "eb143cd8-d63e-40ea-a307-eafd3267b5df",
+            "properties": {
+                "cast": "Tatyana Samoylova, Aleksey Batalov, Vasiliy Merkurev",
+                "imdb": "https://www.imdb.com/title/tt0050634/?ref_=nv_sr_srsg_0",
+                "title": "The cranes are flying",
+                "filmweb": "https://www.filmweb.pl/film/Lec\u0105+\u017curawie-1957-103888",
+                "yearAction": "1941",
+                "description": "Veronica plans a rendezvous with her lover, Boris, at the bank of river, only for him to be drafted into World War II shortly thereafter.",
+                "yearProduction": "1957"
+            }
+        },
+{
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -157.98977103,
+                    21.43289777
+                ]
+            },
+            "id": "3f5e1b40-0d37-4be3-83cf-97e2bb371201",
+            "properties": {
+                "cast": "Burt Lancaster, Montgomery Clift, Deborah Kerr",
+                "imdb": "https://www.imdb.com/title/tt0045793/?ref_=nv_sr_srsg_0",
+                "title": "From Here to Eternity",
+                "filmweb": "https://www.filmweb.pl/film/St\u0105d+do+wieczno\u015bci-1953-31023",
+                "yearAction": "1941",
+                "description": "At a U.S. Army base in 1941 Hawaii, a private is cruelly punished for not boxing on his unit's team, while his commanding officer's wife and top aide begin a tentative affair.",
+                "yearProduction": "1953"
+            }
+        },
+{
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.12031878,
+                    51.50923136
+                ]
+            },
+            "id": "22deae56-c74b-4881-9326-39924716565c",
+            "properties": {
+                "cast": "Philip Dickson, George Gravett, Fred Griffiths(uncredited)",
+                "imdb": "https://www.imdb.com/title/tt0035881/?ref_=nv_sr_srsg_0",
+                "title": "Fires Were Started",
+                "filmweb": "https://www.filmweb.pl/film/Wybuch\u0142y+po\u017cary-1943-269418",
+                "yearAction": "1941",
+                "description": "A tale of firefighters in London during the Blitz.",
+                "yearProduction": "1943"
+            }
+        }
+]
+}

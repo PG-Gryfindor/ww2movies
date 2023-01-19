@@ -1,0 +1,26 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    19.22090929,
+                    50.03776371
+                ]
+            },
+            "id": "48b6d600-3013-44ad-8287-b0e8e4f62c03",
+            "properties": {
+                "cast": "Simon Srebnik, Michael Podchlebnik, Motke Za\u00efdl",
+                "imdb": "https://www.imdb.com/title/tt0090015/?ref_=nv_sr_srsg_0",
+                "title": "Shoah",
+                "filmweb": "https://www.filmweb.pl/film/Shoah-1985-89037",
+                "yearAction": "1939",
+                "description": "Claude Lanzmann's epic documentary recounts the story of the Holocaust through interviews with witnesses - perpetrators as well as survivors.",
+                "yearProduction": "1985"
+            }
+        }
+]
+}

@@ -2,26 +2,68 @@
     "type": "FeatureCollection",
     "features": [
 
-    {
+        {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                       0.51446563,
-                      50.44601891
-                    ]
-                },
-    
-        "id": "7a26322c-1093-4a83-b5ca-451404f1b59d",
-        "properties": {
-            "cast": "David Niven, Kim Hunter, Robert Coote",
-            "imdb": "https://www.imdb.com/title/tt0038733/?ref_=nv_sr_srsg_0",
-            "title": "A Matter of Life and Death",
-            "filmweb": "https://www.filmweb.pl/film/Sprawa+\u017cycia+i+\u015bmierci-1946-3604",
-            "yearAction": "1945",
-            "description": "A British wartime aviator who cheats death must argue for his life before a celestial court, hoping to prolong his fledgling romance with an American girl.",
-            "yearProduction": "1946"
+                    -1.67312385,
+                    48.11538783
+                ]
+            },
+            "id": "9c7d235e-17b9-4a09-822b-b9ca3fb1c846",
+            "properties": {
+                "cast": " Lee Marvin, Ernest Borgnine, Charles Bronson",
+                "imdb": "https://www.imdb.com/title/tt0061578/?ref_=nv_sr_srsg_0",
+                "title": "The Dirty Dozen",
+                "filmweb": "https://www.filmweb.pl/film/Parszywa+dwunastka-1967-8547",
+                "yearAction": "1944",
+                "description": "During World War II, a rebellious U.S. Army Major is assigned a dozen convicted murderers to train and lead them into a mass assassination mission of German officers.",
+                "yearProduction": "1967"
+            }
+        },
+{
+            "type": "Feature",
+            "properties": {
+                "icon": "theatre"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    21.10386375,
+                    52.20810378
+                ]
+            },
+            "id": "f097c36e-4a19-4e3c-9541-4c7dd21982d5",
+            "properties": {
+                "cast": "Teresa Izewska, Tadeusz Janczar, Wienczyslaw Glinski",
+                "imdb": "https://www.imdb.com/title/tt0050585/?ref_=nv_sr_srsg_0",
+                "title": "Kanal",
+                "filmweb": "https://www.filmweb.pl/film/Kana\u0142-1956-1117",
+                "yearAction": "1944",
+                "description": "In 1944, during the Warsaw uprising against the Nazis, Polish Lieutenant Zadra and his resistance fighters use Warsaw's sewer system to escape the German encirclement.",
+                "yearProduction": "1956"
+            }
+        },
+{
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.48464409,
+                    41.89442037
+                ]
+            },
+            "id": "1aee7872-47f9-4abf-b18b-de70707801a7",
+            "properties": {
+                "cast": "Anna Magnani, Aldo Fabrizi, Marcello Pagliero",
+                "imdb": "https://www.imdb.com/title/tt0038890/?ref_=nv_sr_srsg_0",
+                "title": "Rome, open city",
+                "filmweb": "https://www.filmweb.pl/film/Rzym%2C+miasto+otwarte-1945-32547",
+                "yearAction": "1944",
+                "description": "During the Nazi occupation of Rome in 1944, the Resistance leader, Giorgio Manfredi, is chased by the Nazis as he seeks refuge and a way to escape.",
+                "yearProduction": "1945"
+            }
         }
-    }
 ]
 }

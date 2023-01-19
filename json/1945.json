@@ -1,0 +1,87 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+
+    {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                       0.51446563,
+                      50.44601891
+                    ]
+                },
+    
+        "id": "7a26322c-1093-4a83-b5ca-451404f1b59d",
+        "properties": {
+            "cast": "David Niven, Kim Hunter, Robert Coote",
+            "imdb": "https://www.imdb.com/title/tt0038733/?ref_=nv_sr_srsg_0",
+            "title": "A Matter of Life and Death",
+            "filmweb": "https://www.filmweb.pl/film/Sprawa+\u017cycia+i+\u015bmierci-1946-3604",
+            "yearAction": "1945",
+            "description": "A British wartime aviator who cheats death must argue for his life before a celestial court, hoping to prolong his fledgling romance with an American girl.",
+            "yearProduction": "1946"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                19.20415412,
+                50.02637082
+            ]
+        },
+        "id": "983ffa71-72a2-4e16-a832-46dabc8f4e00",
+        "properties": {
+            "cast": "Michel Bouquet, Reinhard Heydrich, Heinrich Himmler, ",
+            "imdb": "https://www.imdb.com/title/tt0048434/?ref_=nv_sr_srsg_0",
+            "title": "Night and Fog",
+            "filmweb": "https://www.filmweb.pl/film/Noc+i+mg\u0142a-1955-125644",
+            "yearAction": "1945",
+            "description": "The history of Nazi Germany's death camps of the Final Solution and the hellish world of dehumanization and death contained inside.",
+            "yearProduction": "1956"
+        }
+    },
+{
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                19.93157294,
+                50.05618278
+            ]
+        },
+        "id": "00fcb910-aa6c-41ad-99ef-1ab247859b98",
+        "properties": {
+            "cast": "Liam Neeson, Ralph Fiennes, Ben Kingsley",
+            "imdb": "https://www.imdb.com/title/tt0108052/",
+            "title": "Schindler's List",
+            "filmweb": "https://www.filmweb.pl/film/Lista+Schindlera-1993-1211",
+            "yearAction": "1945",
+            "description": "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
+            "yearProduction": "1993"
+        }
+    },
+{
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                135.18664955,
+                34.69862022
+            ]
+        },
+        "id": "17f2244c-72b9-4497-a38c-b50ee807696f",
+        "properties": {
+            "cast": " Tsutomu Tatsumi, Ayano Shiraishi, Akemi Yamaguchi",
+            "imdb": "https://www.imdb.com/title/tt0095327/?ref_=nv_sr_srsg_0",
+            "title": "Grave of Fireflies",
+            "filmweb": "https://www.filmweb.pl/film/Grobowiec+\u015bwietlik\u00f3w-1988-34655",
+            "yearAction": "1945",
+            "description": "A young boy and his little sister struggle to survive in Japan during World War II.",
+            "yearProduction": "1988"
+        }
+    }
+]
+}

@@ -1,0 +1,66 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -349.07032664,
+                    47.51691279
+                ]
+            },
+            "id": "886766c2-ce8e-430f-848d-685d61a479fe",
+            "properties": {
+                "cast": "Richard Burton, Clint Eastwood, Mary Ure",
+                "imdb": "https://www.imdb.com/title/tt0065207/?ref_=nv_sr_srsg_0",
+                "title": "Where Eagles Dare",
+                "filmweb": "https://www.filmweb.pl/film/Tylko+dla+or\u0142\u00f3w-1968-11289",
+                "yearAction": "1943",
+                "description": "Allied agents stage a daring raid on a castle where the Nazis are holding American brigadier general George Carnaby prisoner, but that's not all that's really going on.",
+                "yearProduction": "1968"
+            }
+        },
+{
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    36.77355703,
+                    45.19181072
+                ]
+            },
+            "id": "b165c011-d5e1-4a7b-a2cd-ad29b884e0d0",
+            "properties": {
+                "cast": "James Coburn, Maximilian Schell, James Mason",
+                "imdb": "https://www.imdb.com/title/tt0074695/?ref_=nv_sr_srsg_0",
+                "title": "Cross of Iron",
+                "filmweb": "https://www.filmweb.pl/film/\u017belazny+krzy\u017c-1977-37394",
+                "yearAction": "1943",
+                "description": "German commander Hauptmann Stransky (Maximilian Schell) places a squad in extreme danger after Sergeant Rolf Steiner (James Coburn) refuses to lie for him.",
+                "yearProduction": "1977"
+            }
+        },
+{
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    27.2498,
+                    53.1062
+                ]
+            },
+            "id": "bc363f18-e9fd-42a2-9216-2b988fe21022",
+            "properties": {
+                "cast": "Aleksei Kravchenko, Olga Mironova",
+                "imdb": "https://www.imdb.com/title/tt0091251/",
+                "title": "Come and see",
+                "filmweb": "https://www.filmweb.pl/film/Id\u017a+i+patrz-1985-35185",
+                "yearAction": "1943",
+                "description": "After finding an old rifle, a young boy joins the Soviet resistance movement against ruthless German forces and experiences the horrors of World War II.",
+                "yearProduction": "1985"
+            }
+        }
+]
+}
