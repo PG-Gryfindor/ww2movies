@@ -4,7 +4,7 @@
 
 
 let language = document.querySelector(".language"),
-     link = document.querySelectorAll("a"),
+     link = document.querySelectorAll(".lang"),
      logo = document.querySelector(".logo"),
      login = document.querySelector(".login");
 
