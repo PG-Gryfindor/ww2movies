@@ -1,79 +1,3 @@
-"use strict"
-
-
-
-
-let layerID = 'movies' ;
-let sourceLayer = './json/movies.json';
-// ******* Switching Years_nav *******
-const changingBG = document.querySelector('.changeBG')
-
-function changeTo1939() {
-    if (document.getElementsByClassName('.1939')) {
-        changingBG.style.background = `url(./img/bg-1939.jpg)`;
-
-        layerID = 'movies';
-        sourceLayer = './json/movies.json';
-        
-    } 
-}
-
-function changeTo1940() {
-    if (document.getElementsByClassName('.1940')) {
-
-        changingBG.style.background = `url(./img/bg-1940.jpg)`;
-        layerID = '1944';
-        sourceLayer = './json/1944.json';
-    } 
-}
-
-function changeTo1941() {
-    if (document.getElementsByClassName('.1941')) {
-
-        changingBG.style.background = `url(./img/bg-1941.jpg)`;
-        layerID = '1944';
-        sourceLayer = './json/1944.json';
-    } 
-}
-
-function changeTo1942() {
-    if (document.getElementsByClassName('.1942')) {
-
-        changingBG.style.background = `url(./img/bg-1942.jpg)`;
-        layerID = '1944';
-        sourceLayer = './json/1944.json';
-    } 
-}
-
-function changeTo1943() {
-    if (document.getElementsByClassName('.1943')) {
-
-        changingBG.style.background = `url(./img/bg-1943.jpg)`;
-        layerID = '1944';
-        sourceLayer = './json/1944.json';
-    } 
-}
-
-function changeTo1944() {
-    if (document.getElementsByClassName('.1944')) {
-
-        changingBG.style.background = `url(./img/bg-1944.jpg)`;
-
-        layerID = '1944';
-        sourceLayer = './json/1944.json';
-        
-    } 
-}
-
-function changeTo1945() {
-    if (document.getElementsByClassName('.1945')) {
-
-        changingBG.style.background = `url(./img/bg-1945.jpg)`;
-        layerID = '1944';
-        sourceLayer = './json/1944.json';
-    } 
-}
-
 
 // ******* Map ******* 
 const key = 'KBNcLm3O2HsmQwAGcJSS ';
@@ -86,10 +10,8 @@ const map = new maplibregl.Map({
 map.addControl(new maplibregl.NavigationControl(), 'top-right');
 
  // ******* Maps Markers *******
-
- 
-
-
+let layerID = '1944';
+let sourceLayer = './json/1944.json';
  map.on('load', function () {
     // Add an image to use as a custom marker
     map.loadImage(
@@ -132,3 +54,6 @@ map.on('click', layerID, function (e) {
                     <a href = "${e.features[0].properties.filmweb}">filmweb</a>`)
         .addTo(map);
 });
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

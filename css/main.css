@@ -55,7 +55,7 @@ body.dark {
 
 
 header {
-    font-family: 'Stick No Bills', sans-serif;
+    font-family: 'Stick No Bills', "sans-serif";
     font-weight: 500;
     font-size: 2rem;
     width: 100%;
@@ -391,16 +391,38 @@ footer ul li a {
     /* border-color: var(--border-color); */
 }
 
-
-/******** MapLibre POPUP ***********/
+                                                                /******** MapLibre POPUP ***********/
 .mapboxgl-popup-anchor-top .mapboxgl-popup-tip, .maplibregl-popup-anchor-top .maplibregl-popup-tip {
-    display:none;
+    border-bottom-color: var(--color-dropdown-bg);
 }
 
 
 .mapboxgl-popup-content, .maplibregl-popup-content {
     background-color: var(--color-dropdown-bg) ;
+    font-family: 'Stick No Bills', "sans-serif";
+    font-size: 1rem;
+
 }
+
+.mapboxgl-popup-close-button,
+ .maplibregl-popup-close-button {
+    margin: 2px ;
+    width: 2rem;
+    height: 2rem;
+    font-family: st;
+    font-size: 2rem;
+    color: var(--color-font);
+    justify-self: center;
+}
+
+.mapboxgl-popup-close-button:hover,
+.maplibregl-popup-close-button:hover {
+    
+     color: #b03625;
+     background-color: transparent;
+     border: none;
+    
+ }
 
 @media only screen and (max-width: 1024px) {
     body {

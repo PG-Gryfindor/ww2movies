@@ -1,0 +1,27 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+
+    {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                       0.51446563,
+                      50.44601891
+                    ]
+                },
+    
+        "id": "7a26322c-1093-4a83-b5ca-451404f1b59d",
+        "properties": {
+            "cast": "David Niven, Kim Hunter, Robert Coote",
+            "imdb": "https://www.imdb.com/title/tt0038733/?ref_=nv_sr_srsg_0",
+            "title": "A Matter of Life and Death",
+            "filmweb": "https://www.filmweb.pl/film/Sprawa+\u017cycia+i+\u015bmierci-1946-3604",
+            "yearAction": "1945",
+            "description": "A British wartime aviator who cheats death must argue for his life before a celestial court, hoping to prolong his fledgling romance with an American girl.",
+            "yearProduction": "1946"
+        }
+    }
+]
+}
