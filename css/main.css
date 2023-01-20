@@ -396,8 +396,30 @@ footer ul li a {
                                                                 /******** MapLibre POPUP ***********/
 .mapboxgl-popup-anchor-top .mapboxgl-popup-tip, .maplibregl-popup-anchor-top .maplibregl-popup-tip {
     border-bottom-color: var(--color-dropdown-bg);
+
 }
 
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip, .maplibregl-popup-anchor-bottom .maplibregl-popup-tip {
+    border-top-color: var(--color-dropdown-bg);
+
+}
+.mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip, .maplibregl-popup-anchor-top-right .maplibregl-popup-tip {
+    border-bottom-color: var(--color-dropdown-bg);
+    
+}
+
+.mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip, .maplibregl-popup-anchor-top-left .maplibregl-popup-tip {
+    border-bottom-color: var(--color-dropdown-bg);
+    
+}
+
+.mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip, .maplibregl-popup-anchor-bottom-left .maplibregl-popup-tip {
+    border-top-color: var(--color-dropdown-bg);
+}
+
+.mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip, .maplibregl-popup-anchor-bottom-right .maplibregl-popup-tip {
+    border-top-color: var(--color-dropdown-bg);
+}
 
 .mapboxgl-popup-content, .maplibregl-popup-content {
     background-color: var(--color-dropdown-bg) ;
