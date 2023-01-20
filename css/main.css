@@ -544,12 +544,14 @@ footer ul li a {
     }
 
     .popup {
+        z-index: 5;
         
         left:27%;
         
     }
     
     .open-popup {
+        z-index: 5;
         
         left:27%;
         
@@ -563,12 +565,14 @@ footer ul li a {
     }
 
     .popup {
+        z-index: 5;
         
         left:20%;
         
     }
     
     .open-popup {
+        z-index: 5;
         
         left:20%;
         
@@ -582,12 +586,14 @@ footer ul li a {
     }
 
     .popup {
+        z-index: 5;
         
         left:10%;
         
     }
     
     .open-popup {
+        z-index: 5;
         
         left:10%;
         
@@ -601,14 +607,17 @@ footer ul li a {
     }
 
     .popup {
-        
-        left:2%;
+        z-index: 5;
+        left:0;
         
     }
     
     .open-popup {
         
-        left:2%;
+        z-index: 5;
+        left:0;
         
     }
+
+    
 }
