@@ -1,6 +1,16 @@
 
 "use strict"
-
+// ******* Dark/Light Theme *******
+let theme = window.localStorage.getItem('theme')
+//console.log(theme);
+if (theme === null ||theme === 'light') {
+    mode = document.getElementById('mode');
+    mode.innerHTML = 'dark_mode';
+} else {
+    mode = document.getElementById('mode');
+    document.body.classList.toggle('dark');
+    mode.innerHTML = 'light_mode';
+}
 // ******* Signup/Login Popup ******* 
 function setFormMessage(formElement, type, message) {
     const messageElement = formElement.querySelector(".form__message")
@@ -87,19 +97,20 @@ function playStop() {
     }
 };
 
-// ******* Dark/Light Theme *******
+// ******* Dark/Light Theme Toggle*******
 document.querySelector('.theme-toggle-button').addEventListener('click', () => {
     document.body.classList.toggle('dark')
-})
-
-function toggleTheme() {
     let mode = document.getElementById('mode');
     
     if (mode.innerHTML === 'dark_mode') {
         mode.innerHTML = 'light_mode';
+        window.localStorage.setItem('theme', 'dark');
     } else {
         mode.innerHTML = 'dark_mode';
+        window.localStorage.setItem('theme', 'light');
     }
-} 
+})
+
+//******************************************* */
 
 

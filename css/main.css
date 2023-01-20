@@ -48,6 +48,20 @@ body.dark {
     --border-radius: 2px;
 
 }
+/* body.light {
+    
+    --color-dropdown-bg: #a09898;
+    --color-bg: #ffffff85;
+    --color-font: #000000;
+    --color-primary: #223122;
+    --color-primary-dark: #007f67;
+    --color-link: #252c6a;
+    --color-error: #cc3333;
+    --color-success: #4bb544;
+    --border-color: #000000;
+    --border-radius: 2px;
+
+} */
 
 .changeBG {
     background: url(../img/bg-1939.jpg); 
