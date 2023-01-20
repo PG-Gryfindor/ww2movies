@@ -8,6 +8,7 @@ let languageData = {
          login: "Logowanie / Rejestracja",
          form__title_login: "Logowanie",
          form__button: "Kontynuuj",
+         form__button2: "Kontynuuj",
          forgot: "Nie pamiętasz hasła?",
          create: "Nie masz jeszcze konta? Zarejestruj się",
          form__title_create: "Utwórz Konto",
@@ -18,6 +19,7 @@ let languageData = {
          login: "Login / Signup",
          form__title_login: "Login",
          form__button: "Continue",
+         form__button2: "Continue",
          forgot: "Forgot your password?",
          create: "Don't have account? Create account",
          form__title_create: "Create Account",
@@ -29,12 +31,13 @@ let languageData = {
      link = document.querySelectorAll('.lang'),
      logo = document.querySelector('.logo'),
      login = document.querySelector('.login'),
-     formTitleLogin = document.querySelector('.form__title_login'),
-     formButton = document.querySelector('.form__button'),
+     form__title_login = document.querySelector('.form__title_login'),
+     form__button = document.querySelector('.form__button'),
+     form__button2 = document.querySelector('.form__button2'),
      forgot = document.querySelector('.forgot'),
      create = document.querySelector('.create'),
      already = document.querySelector('.already'),
-     formTitleCreate = document.querySelector('.form__title_create');
+     form__title_create = document.querySelector('.form__title_create');
  
  // Check for a previously saved language in the cookie
  let savedLanguage = getCookie("language");
@@ -56,12 +59,13 @@ let languageData = {
  function changeLanguage(attr) {
      logo.textContent = languageData[attr].logo;
      login.textContent = languageData[attr].login;
-     formTitleLogin.textContent = languageData[attr].form__title_login;
-     formButton.textContent = languageData[attr].form__button;
+     form__title_login.textContent = languageData[attr].form__title_login;
+     form__button.textContent = languageData[attr].form__button;
+     form__button2.textContent = languageData[attr].form__button2;
      forgot.textContent = languageData[attr].forgot;
      create.textContent = languageData[attr].create;
      already.textContent = languageData[attr].already;
-     formTitleCreate.textContent = languageData[attr].form__title_create;
+     form__title_create.textContent = languageData[attr].form__title_create;
  }
 
 function setCookie(name, value, days) {
