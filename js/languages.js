@@ -3,7 +3,7 @@
 // ******* Multilingual *******
 
 let languageData = {
-     polish: {
+     pl: {
          logo: "II Wojna Światowa w filmach",
          login: "Logowanie / Rejestracja",
          form__title_login: "Logowanie",
@@ -13,7 +13,7 @@ let languageData = {
          form__title_create: "Utwórz Konto",
          already: "Masz już konto? Zaloguj się"
      },
-     english: {
+     en: {
          logo: "World War II Movies",
          login: "Login / Signup",
          form__title_login: "Login",
@@ -47,7 +47,7 @@ let languageData = {
          language.querySelector('.active').classList.remove('active');
          el.classList.add('active');
  
-         let attr = el.getAttribute('language');
+         let attr = el.getAttribute('hreflang');
          setCookie("language", attr, 30); // Store the selected language in a cookie
          changeLanguage(attr);
      });

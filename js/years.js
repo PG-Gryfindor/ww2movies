@@ -7,6 +7,14 @@ let currentLayer;
 // ******* Switching Years_nav *******
 const changingBG = document.querySelector('.changeBG')
 
+function changeToAll() {
+    changingBG.style.background = `url(./img/bg-1939.jpg)`;
+    layerID = 'movies' ;
+    sourceLayer = './json/movies.json';
+    removeOldLayers();
+    addNewLayers();
+}
+
 function changeTo1939() {
     changingBG.style.background = `url(./img/bg-1939.jpg)`;
     layerID = '1939' ;
