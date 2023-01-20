@@ -388,9 +388,9 @@ footer ul li a {
 }
 
 .footer-col {
-    /* border-style: solid;
-    border-width: 1px 0 0 0; */
-    /* border-color: var(--border-color); */
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    border-color: var(--border-color);
 }
 
                                                                 /******** MapLibre POPUP ***********/
@@ -483,7 +483,7 @@ footer ul li a {
 
     }
     footer ul li a{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         text-align: center;
         
     }
@@ -578,6 +578,7 @@ footer ul li a {
         grid-template-columns: 2fr;
         
     }
+    
     .popup {
         left:27%;
     }
