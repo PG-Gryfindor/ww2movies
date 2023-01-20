@@ -441,7 +441,9 @@ footer ul li a {
 
 @media only screen and (max-width: 1024px) {
     body {
-        display:block;
+        display:grid;
+        grid-template-columns: 1fr;
+        
     }
 
     header {
@@ -450,25 +452,58 @@ footer ul li a {
         font-weight: 500;
         font-size: 2rem;
         width: 100%;
-        display: flex;
+        display: grid;
         align-content:space-between;
         justify-content:space-between;
         width: 100%;
         border: var(--border-color) 3px solid;
         border-bottom: 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto; 
+        grid-template-areas: 
+        " logo user_nav"
+        "years_nav years_nav";
+        background-image:none;
+        
     }
+    footer {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items:center;
+        
+    }
+    footer ul {
+        margin: 1rem 0;
+        display: block;
+    }
+    footer ul li {
+        padding: 1rem 1rem;
+        display: block;
+        text-align: center;
 
-    footer,
+    }
+    footer ul li a{
+        font-size: 1.2rem;
+        text-align: center;
+        
+    }
+    
     nav {
-        display: none;
+        grid-area: years_nav;
     }
-
+    .logo {
+        grid-area: logo;
+    }
+    .years_nav {
+    }
     .user_nav {
+        grid-area: user_nav;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         align-items: center;
         justify-items: center;
         margin: 1px;
+        margin-right: 1em;
     }
 
     .user_nav a, .user_nav i {
@@ -523,15 +558,11 @@ footer ul li a {
     }
 
     .popup {
-        
         left:33%;
-        
     }
     
     .open-popup {
-        
         left:33%;
-        
     }
     
 }
@@ -542,15 +573,15 @@ footer ul li a {
     header {
         font-size: 1.6rem;
     }
-
-    .popup {
+    footer {
         
-        left:27%;
+        grid-template-columns: 2fr;
         
     }
-    
+    .popup {
+        left:27%;
+    }
     .open-popup {
-        
         left:27%;
         
     }
@@ -563,15 +594,11 @@ footer ul li a {
     }
 
     .popup {
-        
         left:20%;
-        
     }
     
     .open-popup {
-        
         left:20%;
-        
     }
 }
 
@@ -582,15 +609,11 @@ footer ul li a {
     }
 
     .popup {
-        
         left:10%;
-        
     }
-    
+
     .open-popup {
-        
         left:10%;
-        
     }
 }
 
@@ -602,14 +625,10 @@ footer ul li a {
 
     .popup {
         left:0;
-        
     }
     
     .open-popup {
-        
         left:0;
-        
     }
-
     
 }
