@@ -11,8 +11,8 @@ const changingBG = document.querySelector('.changeBG')
 
  function changeTo1939() {
         changingBG.style.background = `url(./img/bg-1939.jpg)`;
-        layerID = 'movies' ;
-        sourceLayer = './json/movies.json';
+        layerID = '1939' ;
+        sourceLayer = './json/1939.json';
         
         reloadMap();
         
@@ -20,40 +20,45 @@ const changingBG = document.querySelector('.changeBG')
 
  function changeTo1940() {
         changingBG.style.background = `url(./img/bg-1940.jpg)`;
-         layerID = '1944';
-         sourceLayer = './json/1944.json';
+         layerID = '1940';
+         sourceLayer = './json/1940.json';
         
          reloadMap();
 }
 
  function changeTo1941() {
         changingBG.style.background = `url(./img/bg-1941.jpg)`;
-        layerID = '1944';
-        sourceLayer = './json/1944.json';
+        layerID = '1941';
+        sourceLayer = './json/1941.json';
+        reloadMap();
 }
 
  function changeTo1942() {
         changingBG.style.background = `url(./img/bg-1942.jpg)`;
-        layerID = '1944';
-        sourceLayer = './json/1944.json';
+        layerID = '1942';
+        sourceLayer = './json/1942.json';
+        reloadMap();
 }
 
  function changeTo1943() {
         changingBG.style.background = `url(./img/bg-1943.jpg)`;
-        layerID = '1944';
-        sourceLayer = './json/1944.json';
+        layerID = '1943';
+        sourceLayer = './json/1943.json';
+        reloadMap();
 }
 
  function changeTo1944() {
         changingBG.style.background = `url(./img/bg-1944.jpg)`;
         layerID = '1944';
         sourceLayer = './json/1944.json';
+        reloadMap();
 }
 
  function changeTo1945() {
         changingBG.style.background = `url(./img/bg-1945.jpg)`;
         layerID = '1944';
-        sourceLayer = './json/1944.json';
+        sourceLayer = './json/1945.json';
+        reloadMap();
 }
 
 function reloadMap () {
