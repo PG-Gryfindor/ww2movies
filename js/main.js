@@ -13,7 +13,11 @@ if (theme === null ||theme === 'light') {
 }
 // ******* Signup/Login Popup ******* 
 function setFormMessage(formElement, type, message) {
-    const messageElement = formElement.querySelector(".form__message")
+    const messageElement = formElement.querySelector(".form__message");
+
+    if(messageElement == null) {
+        return;
+    }
 
     messageElement.textContent = message;
     messageElement.classList.remove("form__message--success", "form__message--error");
@@ -46,13 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
         createAccountForm.classList.add("form--hidden");
     });
 
-    loginForm.addEventListener("submit", e => {
-        e.preventDefault();
-
-     //  AJAX/Fetch login
-
-        setFormMessage(loginForm, "error", "Invalid username/password combination");
-    });
+    //loginForm.addEventListener("submit", e => submitLoginForm(e));
 
     document.querySelectorAll(".form__input").forEach(inputElement => {
         inputElement.addEventListener("blur", e => {
@@ -66,6 +64,36 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+async function submitLoginForm(e) {
+    e.preventDefault();
+
+    var data = {
+        login: document.getElementById('form__input-login').value,
+        password: document.getElementById('form__input-password').value,
+    };
+
+    let url = `/index.php?controller=auth&method=login&login=${data.login}&password=${data.password}`;
+    const response = await fetch(url, {
+        method: 'GET',
+        mode: 'cors',
+        cache: 'no-cache',
+        credentials: 'same-origin',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        redirect: 'follow',
+        referrerPolicy: 'no-referrer'
+        });
+    let json = response.json();
+    console.log(json);
+    if(json.result.result != null) {
+        setFormMessage(loginForm, "error", "Logged in");
+        closePopup();
+    } else {
+        setFormMessage(loginForm, "error", "Invalid username/password combination");
+    }
+}
 
 const popup = document.getElementById("popup");
 
