@@ -2,6 +2,7 @@
 "use strict"
 // ******* Dark/Light Theme *******
 let theme = window.localStorage.getItem('theme')
+let mode;
 //console.log(theme);
 if (theme === null ||theme === 'light') {
     mode = document.getElementById('mode');

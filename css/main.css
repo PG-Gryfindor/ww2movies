@@ -1,11 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@500;600&display=swap'); */
-
-/* :root {
-    
-    
-
-} */
-
 * { 
     margin: 0;
     padding:0;
@@ -20,6 +12,7 @@ body {
     --color-primary-dark: #007f67;
     --color-link: #252c6a;
     --color-error: #cc3333;
+    --color-h3-popup-light: #ddd3d3;
     --color-success: #4bb544;
     --border-color: #000000;
     --border-radius: 2px;
@@ -29,13 +22,11 @@ body {
     display: grid;
     grid-template-rows: 1fr 10fr 2fr;
     font-size: 18px;
-    /* background: url(../img/bg-1939.jpg) ; */
     background-size: cover;
     color: var(--color-font);
 }
 /* dark theme */
 body.dark {
-    
     --color-dropdown-bg: #000000cc;
     --color-bg: #000000cc;
     --color-font: #ffffff;
@@ -43,37 +34,21 @@ body.dark {
     --color-primary-dark: #007f67;
     --color-link: #252c6a;
     --color-error: #cc3333;
+    --color-h3-popup-dark: #cc3333;
     --color-success: #4bb544;
     --border-color: #ffffff;
     --border-radius: 2px;
-
 }
-/* body.light {
-    
-    --color-dropdown-bg: #a09898;
-    --color-bg: #ffffff85;
-    --color-font: #000000;
-    --color-primary: #223122;
-    --color-primary-dark: #007f67;
-    --color-link: #252c6a;
-    --color-error: #cc3333;
-    --color-success: #4bb544;
-    --border-color: #000000;
-    --border-radius: 2px;
-
-} */
 
 .changeBG {
     background: url(../img/bg-1939.jpg); 
 }
-
 
 header {
     font-family: 'Stick No Bills', "sans-serif";
     font-weight: 500;
     font-size: 2rem;
     width: 100%;
-    /* max-height: 80px; */
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     align-content: center;
@@ -82,8 +57,6 @@ header {
     background-size: 100px 80px;
     background-color: var(--color-bg);
     margin: 0;
-    
-    
 }
 
 .logo {
@@ -92,7 +65,6 @@ header {
     align-items: center;
     margin-left: 1rem;
     cursor: pointer;
-        
 }
 
 .years_nav {
@@ -100,19 +72,19 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     align-content: center;
-    list-style: none;    
+    list-style: none;  
 }
 
-
-
-.years_nav a {
+.years_nav li a {
     text-decoration: none;
     color: var(--color-font);
     margin-right: 1rem;
+    transition: all .15s ease-in-out;
 }
 
-.years_nav a:hover {
-    transform: translate(scale);
+.years_nav li a:hover {
+    color: var(--color-error);
+    font-size:0.9em; 
 }
 
 .user_nav {
@@ -123,8 +95,13 @@ header {
     margin-right: 1rem;
 }
 .user_nav a, .user_nav i {
+    color: var(--color-font);
     text-decoration: none;
     padding: 1rem;
+}
+
+.user_nav a:hover {
+    color: var(--color-error);
 }
 
  .dropdown i{
@@ -221,7 +198,6 @@ header {
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
     border-radius: var(--border-radius);
     background-color: var(--color-bg);
-    /* background-color: #ffffff95; */
 }
     
 .popup {
@@ -235,6 +211,7 @@ header {
 
 .open-popup {
     visibility: visible;
+    left:40%;
     top: 50%;
     transform: translate(0%, -50%) scale(1);
 }
@@ -323,20 +300,20 @@ header {
     font-weight: bold;
     font-size: 1.1rem;
     color: #ffffff;
-    background: rgba(0,0,0,20);
+    background: rgba(5,0,0,0.9);
     outline: none;
     border: none;
     border-radius: var(--border-radius);
     cursor: pointer;
     cursor: pointer;
-    box-shadow: inset 0 0 0 0 rgba(213 , 44, 21, 50);
-    -webkit-transition: ease-out 0.3s;
-    -moz-transition: ease-out 0.4s;
+    box-shadow: inset 0 0 0 0 rgba(213 , 44, 21, 0.9);
+    transition: ease-out 0.3s;
+    transition: ease-out 0.4s;
     transition: ease-out 0.5s;
 }
 
 .form__button:hover {
-    box-shadow: inset 400px 0 0 0 rgba(213 , 44, 21, 20);
+    box-shadow: inset 400px 0 0 0 rgba(213 , 44, 21, 0.9);
 } 
 
 .form__button:active {
@@ -348,16 +325,17 @@ header {
 }
 
 .form__link {
-    color: var(--color-link);
+    color: var(--color-h3-popup-dark);
     text-decoration: none;
     cursor: pointer;
 }
 
 .form__link:hover {
     text-decoration: underline;
+    color: var(--color-h3-popup-light);
 }
 
-                                                        /******* map *******/
+    /******* map *******/
 .map__container {
     display: grid;
     position: relative;
@@ -373,6 +351,7 @@ header {
     opacity: 0.85;
 }
 
+    /******* footer *******/
 footer {
     font-family: 'Stick No Bills', sans-serif;
     font-weight: 500;
@@ -399,27 +378,72 @@ footer ul li a {
     color: var(--color-font);
 }
 
+footer ul li a:hover {
+    color: var(--color-error);
+    transition: all .15s ease-in-out;
+
+}
+
 .footer-col {
-    /* border-style: solid;
-    border-width: 1px 0 0 0; */
-    /* border-color: var(--border-color); */
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    border-color: var(--border-color);
 }
 
-                                                                /******** MapLibre POPUP ***********/
-.mapboxgl-popup-anchor-top .mapboxgl-popup-tip, .maplibregl-popup-anchor-top .maplibregl-popup-tip {
+    /******** MapLibre POPUP ***********/
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip,
+.maplibregl-popup-anchor-top .maplibregl-popup-tip {
     border-bottom-color: var(--color-dropdown-bg);
+
 }
 
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip,
+.maplibregl-popup-anchor-bottom .maplibregl-popup-tip {
+    border-top-color: var(--color-dropdown-bg);
+
+}
+.mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip,
+.maplibregl-popup-anchor-top-right .maplibregl-popup-tip {
+    border-bottom-color: var(--color-dropdown-bg);
+    
+}
+
+.mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip,
+.maplibregl-popup-anchor-top-left .maplibregl-popup-tip {
+    border-bottom-color: var(--color-dropdown-bg);
+    
+}
+
+.mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip,
+.maplibregl-popup-anchor-bottom-left .maplibregl-popup-tip {
+    border-top-color: var(--color-dropdown-bg);
+}
+
+.mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip,
+.maplibregl-popup-anchor-bottom-right .maplibregl-popup-tip {
+    border-top-color: var(--color-dropdown-bg);
+}
 
 .mapboxgl-popup-content, .maplibregl-popup-content {
     background-color: var(--color-dropdown-bg) ;
     font-family: 'Stick No Bills', "sans-serif";
     font-size: 1rem;
+}
 
+.maplibregl-popup-content a{
+    color: var(--color-font);
+}
+
+.maplibregl-popup-content a:hover{
+    color: var(--color-error);
+}
+
+.maplibregl-popup-content h3{
+    color: var(--color-h3-popup-dark);
 }
 
 .mapboxgl-popup-close-button,
- .maplibregl-popup-close-button {
+.maplibregl-popup-close-button {
     margin: 2px ;
     width: 2rem;
     height: 2rem;
@@ -438,9 +462,26 @@ footer ul li a {
     
  }
 
+ /* ************* Media screen Sizes ******************** */
+ @media only screen and (max-width: 1200px) {
+    .popup {
+        
+        left:35%;
+        
+    }
+    
+    .open-popup {
+        
+        left:35%;
+        
+    }
+ }
+
 @media only screen and (max-width: 1024px) {
     body {
-        display:block;
+        display:grid;
+        grid-template-columns: 1fr;
+        
     }
 
     header {
@@ -449,52 +490,86 @@ footer ul li a {
         font-weight: 500;
         font-size: 2rem;
         width: 100%;
-        display: flex;
+        display: grid;
         align-content:space-between;
         justify-content:space-between;
         width: 100%;
         border: var(--border-color) 3px solid;
         border-bottom: 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto; 
+        grid-template-areas: 
+        " logo user_nav"
+        "years_nav years_nav";
+        background-image:none;
+        
     }
+    footer {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items:center;
+        
+    }
+    footer ul {
+        margin: 1rem 0;
+        display: block;
+    }
+    footer ul li {
+        padding: 1rem 1rem;
+        display: block;
+        text-align: center;
 
-    footer,
+    }
+    footer ul li a{
+        font-size: 1.1rem;
+        text-align: center;
+        
+    }
+    
     nav {
-        display: none;
+        grid-area: years_nav;
     }
-
+    .logo {
+        grid-area: logo;
+    }
+   
     .user_nav {
+        grid-area: user_nav;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         align-items: center;
         justify-items: center;
         margin: 1px;
+        margin-right: 1em;
     }
 
     .user_nav a, .user_nav i {
         text-decoration: none;
         padding: 10px;
     }
+
+    .user_nav a:hover {
+        color: var(--color-error);
+    }
     
     /* google icons */
-.material-symbols-outlined {
-    cursor: pointer;
-    font-size: 2rem;
-    font-variation-settings:
-    'FILL' 1,
-    'wght' 300,
-    'GRAD' 0,
-    'opsz' 48
-}
-    
-.icon-hover:hover {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 48
-}
-
-   
+    .material-symbols-outlined {
+        cursor: pointer;
+        font-size: 2rem;
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 48
+    }
+        
+    .icon-hover:hover {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+    }
 
     .map__container {
         height: 100vh;
@@ -520,21 +595,77 @@ footer ul li a {
     .logo {
     margin: 5px;
     }
-    
-}
 
+    .popup {
+        left:33%;
+    }
+    
+    .open-popup {
+        left:33%;
+    }
+}
 
 @media only screen and (max-width: 900px) {
     
     header {
         font-size: 1.6rem;
     }
-
+    footer {
+        grid-template-columns: 2fr;
+    }
+    
+    .popup {
+        left:27%;
+    }
+  
+    .open-popup {
+        left:27%;
+        
+    }
 }
+
+@media only screen and (max-width: 600px) {
+    
+    header {
+        font-size: 1.6rem;
+    }
+
+    .popup {
+        left:20%;
+    }
+    
+    .open-popup {
+        left:20%;
+    }
+}
+
 @media only screen and (max-width: 480px) {
 
     header {
         font-size: 1.2rem;
     }
 
+    .popup {
+        left:10%;
+    }
+
+    .open-popup {
+        left:10%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    header {
+        font-size: 1.2rem;
+    }
+
+    .popup {
+        left:0;
+    }
+    
+    .open-popup {
+        left:0;
+    }
+    
 }
